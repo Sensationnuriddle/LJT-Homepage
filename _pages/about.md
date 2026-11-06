@@ -35,7 +35,7 @@ Professor Junxian He (HKUST NLP Group) is my Ph.D. supervisor and previously adv
 Publications
 ======
 
-A full list of my publications is also available on the [Publications](/publications/) page.
+A full list of my publications is also available on the [Publications]({{ "/publications/" | relative_url }}) page.
 
 1. **SynLogic: Synthesizing Verifiable Reasoning Data at Scale for Learning Logical Reasoning and Beyond.** Junteng Liu, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He. arXiv preprint, 2025. (First author; code available on GitHub.)
 
