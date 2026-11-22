@@ -14,7 +14,7 @@ redirect_from:
 **Junteng Liu** is a first-year PhD candidate at the HKUST NLP Group. His recorded research focus is natural language processing and machine learning, with interests in LLM reasoning and reinforcement learning, hallucination in vision-language models, and LLM truthfulness and interpretability.
 
 - Email: [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
-- GitHub: Vicent0205
+- GitHub: [Vicent0205](https://github.com/Vicent0205)
 - Google Scholar: [Profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
 - X / Twitter: [@junteng88716710](https://x.com/junteng88716710)
 
@@ -62,6 +62,6 @@ See also the dedicated [Publications page]({{ '/publications/' | relative_url }}
 ## Contact
 
 - Email: [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
-- GitHub: `Vicent0205`
+- GitHub: [Vicent0205](https://github.com/Vicent0205)
 - Google Scholar: [https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
 - X / Twitter: [@junteng88716710](https://x.com/junteng88716710)

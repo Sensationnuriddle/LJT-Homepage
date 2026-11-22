@@ -18,7 +18,7 @@ B.Eng., Shanghai Jiao Tong University (2020–2024; graduated June 2024)
 Junteng Liu is a researcher whose work focuses on natural language processing and machine learning. His recorded research interests include LLM reasoning and reinforcement learning, hallucination in vision-language models (VLMs), and LLM truthfulness and interpretability.
 
 - **Email:** [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
-- **GitHub:** Vicent0205
+- **GitHub:** [github.com/Vicent0205](https://github.com/Vicent0205)
 - **Google Scholar:** [Junteng Liu's profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
 - **X / Twitter:** [@junteng88716710](https://x.com/junteng88716710)
 
@@ -32,7 +32,7 @@ Junteng Liu is a researcher whose work focuses on natural language processing an
 | Undergraduate background | B.Eng., Shanghai Jiao Tong University, 2020–2024; graduated in June 2024 |
 | Research focus | Natural language processing and machine learning |
 | Email | [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk) |
-| GitHub | `Vicent0205` |
+| GitHub | [github.com/Vicent0205](https://github.com/Vicent0205) |
 | Google Scholar | [Publication profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate) |
 | X / Twitter | [@junteng88716710](https://x.com/junteng88716710) |
 
@@ -139,6 +139,6 @@ The publication record also documents experience with verifiable reasoning data 
 ## Contact Information {#contact}
 
 - **Email:** [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
-- **GitHub:** `Vicent0205`
+- **GitHub:** [github.com/Vicent0205](https://github.com/Vicent0205)
 - **Google Scholar:** [Profile link](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
 - **X / Twitter:** [@junteng88716710](https://x.com/junteng88716710)
