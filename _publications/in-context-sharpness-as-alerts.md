@@ -5,7 +5,6 @@ category: conferences
 permalink: /publications/in-context-sharpness-as-alerts/
 listing_order: 4
 year: "2024"
-date: "2024"
 venue: "ICML 2024"
 role: "Co-author"
 authors: "Shiqi Chen, Miao Xiong, Junteng Liu, Zhengxuan Wu, Teng Xiao, Siyang Gao, Junxian He"

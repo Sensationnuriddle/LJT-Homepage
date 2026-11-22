@@ -5,7 +5,6 @@ category: conferences
 permalink: /publications/c-eval/
 listing_order: 5
 year: "2023"
-date: "2023"
 venue: "NeurIPS 2023"
 role: "Co-author"
 authors: "Yuzhen Huang, Yuzhuo Bai, Zhihao Zhu, Junlei Zhang, Jinghan Zhang, Tangjun Su, Junteng Liu, Chuancheng Lv, Yikai Zhang, Jiayi Lei, Yao Fu, Maosong Sun, Junxian He"

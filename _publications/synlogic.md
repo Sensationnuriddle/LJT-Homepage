@@ -5,7 +5,6 @@ category: preprints
 permalink: /publications/synlogic/
 listing_order: 1
 year: "2025"
-date: "2025"
 venue: "arXiv (2025)"
 role: "First author"
 authors: "Junteng Liu, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He"

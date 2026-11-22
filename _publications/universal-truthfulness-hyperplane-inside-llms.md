@@ -5,7 +5,6 @@ category: conferences
 permalink: /publications/universal-truthfulness-hyperplane-inside-llms/
 listing_order: 3
 year: "2024"
-date: "2024"
 venue: "EMNLP 2024"
 role: "First author"
 authors: "Junteng Liu, Shiqi Chen, Yu Cheng, Junxian He"

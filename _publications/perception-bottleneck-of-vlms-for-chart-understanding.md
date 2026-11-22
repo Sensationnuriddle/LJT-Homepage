@@ -5,7 +5,6 @@ category: preprints
 permalink: /publications/perception-bottleneck-of-vlms-for-chart-understanding/
 listing_order: 2
 year: "2025"
-date: "2025"
 venue: "arXiv (2025)"
 role: "First author"
 authors: "Junteng Liu, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He"
