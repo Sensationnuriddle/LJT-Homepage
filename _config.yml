@@ -79,7 +79,7 @@ facebook:
   username:
   app_id:
   publisher:
-og_image: ""
+og_image: "favicon-512x512.png"
 og_description: "Junteng Liu's academic profile, research experience, publications, skills, and contact information."
 social:
   type: "Person"
