@@ -18,7 +18,7 @@ B.Eng., Shanghai Jiao Tong University (2020–2024; graduated June 2024)
 Junteng Liu is a researcher whose work focuses on natural language processing and machine learning. His recorded research interests include LLM reasoning and reinforcement learning, hallucination in vision-language models (VLMs), and LLM truthfulness and interpretability.
 
 - **Email:** [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
-- **GitHub:** [Vicent0205](https://github.com/Vicent0205)
+- **GitHub:** Vicent0205
 - **Google Scholar:** [Junteng Liu's profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
 - **X / Twitter:** [@junteng88716710](https://x.com/junteng88716710)
 
@@ -32,7 +32,7 @@ Junteng Liu is a researcher whose work focuses on natural language processing an
 | Undergraduate background | B.Eng., Shanghai Jiao Tong University, 2020–2024; graduated in June 2024 |
 | Research focus | Natural language processing and machine learning |
 | Email | [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk) |
-| GitHub | [github.com/Vicent0205](https://github.com/Vicent0205) |
+| GitHub | `Vicent0205` |
 | Google Scholar | [Publication profile](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate) |
 | X / Twitter | [@junteng88716710](https://x.com/junteng88716710) |
 
@@ -86,21 +86,21 @@ The complete publication record stored in memory is listed below. A dedicated li
 - **Authors:** **Junteng Liu**, Yuanxiang Fan, Zhuo Jiang, Han Ding, Yongyi Hu, Chi Zhang, Yiqi Shi, Shitong Weng, Aili Chen, Shiqi Chen, Yunan Huang, Mozhi Zhang, Pengyu Zhao, Junjie Yan, Junxian He
 - **Recorded publication:** arXiv, 2025
 - **Role:** First author
-- **Code repository:** [MiniMax-AI/SynLogic](https://github.com/MiniMax-AI/SynLogic)
+- **Code repository:** `SynLogic`
 
 ### 2. [On the Perception Bottleneck of VLMs for Chart Understanding]({{ '/publications/perception-bottleneck-of-vlms-for-chart-understanding/' | relative_url }})
 
 - **Authors:** **Junteng Liu**, Weihao Zeng, Xiwen Zhang, Yijun Wang, Zifei Shan, Junxian He
 - **Recorded publication:** arXiv, 2025
 - **Role:** First author
-- **Code repository:** [hkust-nlp/Vision4Chart](https://github.com/hkust-nlp/Vision4Chart) (`Vision4Chart`)
+- **Code repository:** `Vision4Chart` (`Vision4Chart`)
 
 ### 3. [On the Universal Truthfulness Hyperplane Inside LLMs]({{ '/publications/universal-truthfulness-hyperplane-inside-llms/' | relative_url }})
 
 - **Authors:** **Junteng Liu**, Shiqi Chen, Yu Cheng, Junxian He
 - **Recorded publication:** EMNLP 2024
 - **Role:** First author
-- **Code repository:** [hkust-nlp/Universal_Truthfulness_Hyperplane](https://github.com/hkust-nlp/Universal_Truthfulness_Hyperplane)
+- **Code repository:** `Universal_Truthfulness_Hyperplane`
 
 ### 4. [In-Context Sharpness as Alerts: An Inner Representation Perspective for Hallucination Mitigation]({{ '/publications/in-context-sharpness-as-alerts/' | relative_url }})
 
@@ -139,6 +139,6 @@ The publication record also documents experience with verifiable reasoning data 
 ## Contact Information {#contact}
 
 - **Email:** [jliugi@connect.ust.hk](mailto:jliugi@connect.ust.hk)
-- **GitHub:** [https://github.com/Vicent0205](https://github.com/Vicent0205)
+- **GitHub:** `Vicent0205`
 - **Google Scholar:** [Profile link](https://scholar.google.com/citations?hl=en&user=tbK9jl4AAAAJ&view_op=list_works&sortby=pubdate)
 - **X / Twitter:** [@junteng88716710](https://x.com/junteng88716710)
