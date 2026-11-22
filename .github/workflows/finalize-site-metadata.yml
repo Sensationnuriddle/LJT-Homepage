@@ -1,0 +1,28 @@
+name: Finalize site metadata
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - name: Set available site icon as social image
+        run: |
+          set -euo pipefail
+          sed -i 's|^og_image: ""$|og_image: "favicon-512x512.png"|' _config.yml
+          rm -f .github/workflows/finalize-site-metadata.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _config.yml .github/workflows/finalize-site-metadata.yml
+          if git diff --cached --quiet; then
+            echo "No metadata changes."
+          else
+            git commit -m "Use bundled site icon for social metadata"
+            git push origin HEAD:master
+          fi
