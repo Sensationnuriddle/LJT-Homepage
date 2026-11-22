@@ -5,32 +5,34 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
+<div class="wordwrap">
+  The publication record below contains the six works stored in memory. You can also find Junteng Liu's articles on
+  <a href="{{ site.author.googlescholar }}">Google Scholar</a>.
+  Publications are also listed in full on the <a href="{{ base_path }}/">About/home page</a>.
+</div>
+
+{% assign publications = site.publications | sort: "listing_order" %}
+<div class="publication-list" style="margin-top: 1.5rem;">
+  {% for publication in publications %}
+    <article class="archive__item" style="margin-bottom: 2rem;">
+      <h2 class="archive__item-title" style="margin-bottom: 0.35rem;">
+        <a href="{{ publication.url | relative_url }}">{{ publication.title }}</a>
+      </h2>
+      <p class="page__meta" style="margin-bottom: 0.5rem;">
+        <strong>{{ publication.venue }}</strong> · {{ publication.year }} · {{ publication.role }}
+      </p>
+      <p style="margin-bottom: 0.5rem;">{{ publication.authors }}</p>
+      {% if publication.code_url and publication.code_repository %}
+        <p style="margin-bottom: 0.5rem;">
+          Code repository:
+          <a href="{{ publication.code_url }}" rel="noopener">{{ publication.code_repository }}</a>
+        </p>
       {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+      {% if publication.citation %}
+        <p class="archive__item-excerpt" style="font-style: italic;">{{ publication.citation }}</p>
+      {% endif %}
+    </article>
   {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
-
-
-
+</div>
