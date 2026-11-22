@@ -22,27 +22,32 @@ jobs:
           base="https://sensationnuriddle.github.io/LJT-Homepage"
           mkdir -p /tmp/ljt
           for path in "" "publications/" "cv/" "sitemap/"; do
-            name=$(echo "${path:-home}" | tr '/' '-')
-            echo "Checking ${base}/${path}"
-            curl -fsSL --retry 12 --retry-delay 5 --retry-all-errors \
-              "${base}/${path}" -o "/tmp/ljt/${name}.html"
+            slug="${path%/}"
+            slug="${slug:-home}"
+            echo "Checking ${base}/${path} -> ${slug}.html"
+            curl -fsSL --retry 12 --retry-delay 3 --retry-all-errors \
+              "${base}/${path}" -o "/tmp/ljt/${slug}.html"
           done
-          curl -fsSL --retry 12 --retry-delay 5 --retry-all-errors \
+          curl -fsSL --retry 12 --retry-delay 3 --retry-all-errors \
             "${base}/assets/css/main.css" -o /tmp/ljt/main.css
 
-          grep -q "Junteng Liu" /tmp/ljt/-home.html
-          grep -q "jliugi@connect.ust.hk" /tmp/ljt/-home.html
-          grep -q "Academic Background" /tmp/ljt/-home.html
-          grep -q "Research Experience" /tmp/ljt/-home.html
-          grep -q "SynLogic" /tmp/ljt/-home.html
-          grep -q "On the Perception Bottleneck" /tmp/ljt/-home.html
-          grep -q "Universal Truthfulness Hyperplane" /tmp/ljt/-home.html
-          grep -q "In-Context Sharpness" /tmp/ljt/-home.html
-          grep -q "C-Eval" /tmp/ljt/-home.html
-          grep -q "Composing Parameter-Efficient Modules" /tmp/ljt/-home.html
-          grep -q "Skills &amp; Research Expertise" /tmp/ljt/-home.html
-          grep -q "Contact Information" /tmp/ljt/-home.html
-          grep -q "SynLogic" /tmp/ljt/publications-.html
-          grep -q "Zhiyuan Honor Scholarship" /tmp/ljt/cv-.html
+          home=/tmp/ljt/home.html
+          pubs=/tmp/ljt/publications.html
+          cv=/tmp/ljt/cv.html
+
+          grep -q "Junteng Liu" "$home"
+          grep -q "jliugi@connect.ust.hk" "$home"
+          grep -q "Academic Background" "$home"
+          grep -q "Research Experience" "$home"
+          grep -q "SynLogic" "$home"
+          grep -q "On the Perception Bottleneck" "$home"
+          grep -q "Universal Truthfulness Hyperplane" "$home"
+          grep -q "In-Context Sharpness" "$home"
+          grep -q "C-Eval" "$home"
+          grep -q "Composing Parameter-Efficient Modules" "$home"
+          grep -q "Skills &amp; Research Expertise" "$home"
+          grep -q "Contact Information" "$home"
+          grep -q "SynLogic" "$pubs"
+          grep -q "Zhiyuan Honor Scholarship" "$cv"
           test -s /tmp/ljt/main.css
           echo "All deployment content checks passed."
