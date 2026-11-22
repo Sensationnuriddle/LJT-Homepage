@@ -1,0 +1,47 @@
+name: Repair contact links
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  repair:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+
+      - name: Restore memory-provided GitHub links
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          github_url = 'https://github.com/Vicent0205'
+          replacements = {
+              '_pages/about.md': '- **GitHub:** [github.com/Vicent0205](' + github_url + ')',
+              '_pages/cv.md': '- GitHub: [Vicent0205](' + github_url + ')',
+          }
+          for filename, bullet in replacements.items():
+              path = Path(filename)
+              lines = path.read_text().splitlines()
+              updated = []
+              for line in lines:
+                  if filename == '_pages/about.md' and line.startswith('- **GitHub:**'):
+                      line = bullet
+                  elif filename == '_pages/cv.md' and line.startswith('- GitHub:'):
+                      line = bullet
+                  elif line.startswith('| GitHub |'):
+                      line = '| GitHub | [github.com/Vicent0205](' + github_url + ') |'
+                  updated.append(line)
+              path.write_text('\n'.join(updated) + '\n')
+          PY
+
+          grep -Fq '[github.com/Vicent0205](https://github.com/Vicent0205)' _pages/about.md
+          grep -Fq '[Vicent0205](https://github.com/Vicent0205)' _pages/cv.md
+          rm -f .github/workflows/repair-contact-links.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _pages/about.md _pages/cv.md .github/workflows/repair-contact-links.yml
+          git commit -m "Restore GitHub contact links"
+          git push origin HEAD:master
