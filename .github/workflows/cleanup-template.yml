@@ -1,0 +1,41 @@
+name: One-time template cleanup
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+
+      - name: Remove unrequested demo sections
+        run: |
+          set -euo pipefail
+          rm -rf _posts _talks _teaching _portfolio _drafts talkmap
+          rm -f talkmap.ipynb talkmap.py talkmap_out.ipynb
+          rm -f _pages/talks.html _pages/teaching.html _pages/portfolio.html
+          rm -f _pages/year-archive.html _pages/markdown.md
+          rm -f _pages/archive-layout-with-content.md _pages/non-menu-page.md
+          rm -f _pages/talkmap.html _pages/terms.md
+          rm -f .github/workflows/jekyll.yml
+          rm -f .github/workflows/cleanup-template.yml
+
+      - name: Commit cleanup
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No cleanup changes to commit."
+          else
+            git commit -m "Remove unrequested template demo sections"
+            git push origin HEAD:master
+          fi
